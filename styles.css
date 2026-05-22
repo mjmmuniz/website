@@ -1,0 +1,40 @@
+:root {
+  --light-orange: rgb(255, 178, 34);
+  --dark-orange: #df7817;
+  --light-text-color: #fefefe;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif, serif;
+  margin: 0;
+  background-color: var(--dark-orange);
+}
+
+h1 {
+  font-family: serif;
+  font-style: oblique;
+  color: var(--light-orange);
+}
+
+nav {
+  background-color: var(--light-orange);
+}
+
+.nav-list {
+  font-family: serif;
+  font-style: oblique;
+  margin: 0;
+  padding: 1rem;
+  padding-left: 0;
+  text-align: center;
+  list-style: none;
+}
+
+.nav-item {
+  display: inline-block;
+  margin: 0 1 rem;
+}
+
+.nav-link {
+  color: var(--dark-orange);
+}
