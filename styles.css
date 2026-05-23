@@ -16,7 +16,7 @@ h1 {
   color: var(--light-orange);
 }
 
-nav {
+.nav {
   background-color: var(--light-orange);
 }
 
@@ -26,13 +26,14 @@ nav {
   margin: 0;
   padding: 1rem;
   padding-left: 0;
-  text-align: center;
+  text-align: left;
   list-style: none;
 }
 
 .nav-item {
   display: inline-block;
   margin: 0 1 rem;
+  border-radius: 1rem;
 }
 
 .nav-link {
