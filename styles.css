@@ -54,6 +54,7 @@ h1 {
   font-style: oblique;
   color: var(--light-orange);
   margin: 1rem;
+  padding-top: 82px;
 }
 
 .grid-item {
