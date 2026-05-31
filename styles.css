@@ -1,5 +1,6 @@
 :root {
-  --light-orange: rgb(255, 178, 34);
+  --light-orange: #f7ac66;
+  --mid-orange: #fd9738;
   --dark-orange: #df7817;
   --light-pink: #fff2fb;
   --pink-coral: #e76060;
@@ -14,11 +15,11 @@ body {
 h1 {
   font-family: serif;
   font-style: oblique;
-  color: var(--light-orange);
+  color: var(--mid-orange);
 }
 
 .nav {
-  background-color: var(--light-orange);
+  background-color: var(--mid-orange);
   top: 0;
   position: fixed;
   width: 100%;
@@ -46,15 +47,17 @@ h1 {
 .h1 {
   text-align: center;
   margin: 1rem;
-  color: var(--light-orange);
+  color: var(--mid-orange);
 }
 
 .h2 {
+  color: var(--light-orange);
+  background-color: var(--dark-orange);
   font-family: serif;
   font-style: oblique;
-  color: var(--light-orange);
-  margin: 1rem;
-  padding-top: 82px;
+  padding: 0.5rem;
+  margin: 0;
+  /*padding-top: 82px;*/
 }
 
 .grid-item {
@@ -91,6 +94,10 @@ h1 {
   max-width: 400px;
 }
 
+.abtme-div {
+  background-color: var(--light-pink);
+  width: 100%;
+}
 .abtme-container {
   display: grid;
   max-width: 1000px;
@@ -128,6 +135,9 @@ h1 {
   }
 }
 
+.resume-div {
+  background-color: var(--light-pink);
+}
 .embed-resume {
   width: 100%;
   height: 580px;
@@ -161,6 +171,20 @@ h1 {
   .embed-resume {
     max-width: 800px;
   }
+}
+
+.projects-div {
+  background-color: var(--light-pink);
+}
+
+.contact-div {
+  background-color: var(--light-pink);
+}
+
+.nav-gap {
+  width: 100%;
+  height: 72px;
+  background-color: var(--light-pink);
 }
 
 /*
