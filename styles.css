@@ -57,6 +57,10 @@ body {
   text-align: center;
 }
 
+.h2 {
+  font-family: Helvetica, sans-serif;
+}
+
 /* ABOUT ME */
 .grid-item {
   display: flex;
@@ -179,6 +183,16 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 
+.btn-submit {
+  font-family: Helvetica, sans-serif;
+}
+
+.btn-submit:hover {
+  background-color: var(--bright-orange);
+  border-color: var(--bright-orange);
+  font-family: Helvetica, sans-serif;
+}
+
 /* STRUCTURE */
 .nav-gap {
   width: 100%;
@@ -189,7 +203,7 @@ body {
 .footer {
   display: flex;
   height: 70px;
-  color: var(--bright-orange);
+  color: var(--light-white);
   font-family: Helvetica, sans-serif;
   font-style: italic;
   justify-content: center;
