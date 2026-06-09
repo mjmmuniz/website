@@ -9,6 +9,7 @@ body {
   padding: 0;
 }
 
+/* NAVIGATION BAR */
 .nav {
   background-color: var(--almost-black);
   top: 0;
@@ -44,14 +45,7 @@ body {
   color: var(--bright-orange);
 }
 
-@media (max-width: 991.99px) {
-  .navbar-collapse {
-    background-color: var(--almost-black);
-    width: 100vw;
-    z-index: 1020;
-  }
-}
-
+/* HEADERS */
 /*
 .h1 {
   text-align: center;
@@ -70,6 +64,7 @@ body {
   text-align: center;
 }
 
+/* ABOUT ME */
 .grid-item {
   display: flex;
   flex-direction: column;
@@ -122,25 +117,11 @@ body {
     "introsec";
 }
 
-@media (min-width: 415px) {
-  .abtme-container {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "headshot"
-      "introsec";
-  }
-}
-
-@media (min-width: 1000px) {
-  .abtme-container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "headshot introsec";
-  }
-}
-
+/* RESUME */
 .resume-div {
   background-color: var(--light-white);
 }
+
 .embed-resume {
   width: 100%;
   height: 590px;
@@ -158,24 +139,7 @@ body {
   align-items: center;
 }
 
-@media (min-width: 415px) {
-  .embed-resume {
-    max-width: 450px;
-  }
-}
-
-@media (min-width: 768px) {
-  .embed-resume {
-    max-width: 700px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .embed-resume {
-    max-width: 800px;
-  }
-}
-
+/* PROJECTS */
 .projects-div {
   background-color: var(--bright-orange);
 }
@@ -196,6 +160,7 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 
+/* CONTACT */
 .contact-div {
   background-color: var(--light-white);
 }
@@ -221,18 +186,7 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 
-@media (min-width: 415px) {
-  .contact-form {
-    max-width: 450px;
-  }
-}
-
-@media (min-width: 768px) {
-  .contact-form {
-    max-width: 600px;
-  }
-}
-
+/* STRUCTURE */
 .nav-gap {
   width: 100%;
   height: 61px;
@@ -248,4 +202,50 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--almost-black);
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 415px) {
+  .abtme-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "headshot"
+      "introsec";
+  }
+  .embed-resume {
+    max-width: 450px;
+  }
+  .contact-form {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 768px) {
+  .embed-resume {
+    max-width: 700px;
+  }
+  .contact-form {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .abtme-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "headshot introsec";
+  }
+}
+
+@media (min-width: 1024px) {
+  .embed-resume {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 991.99px) {
+  .navbar-collapse {
+    background-color: var(--almost-black);
+    width: 100vw;
+    z-index: 1020;
+  }
 }
