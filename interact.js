@@ -1,5 +1,16 @@
-//".carousel".carousel();
+// nav bar toggling
+const navLinks = document.querySelectorAll(".nav-link");
+const menuToggle = document.getElementById("navbarNavAltMarkup");
 
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    if (menuToggle.classList.contains("show")) {
+      menuToggle.classList.remove("show");
+    }
+  });
+});
+
+// form submission
 const form = document.getElementById("form");
 const submitBtn = form.querySelector('button[type="submit"]');
 
